@@ -1,5 +1,6 @@
-Flask
+flask
 gunicorn
 requests
 bs4
 transformers
+torch
