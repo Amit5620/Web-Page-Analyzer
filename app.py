@@ -6,7 +6,9 @@ from transformers import pipeline
 app = Flask(__name__)
 
 # Load Hugging Face QA model
-qa_pipeline = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
+# qa_pipeline = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
+qa_pipeline = pipeline("question-answering", model="sshleifer/tiny-distilbert-base-cased-distilled-squad")
+
 
 # Store last scraped content
 cached_content = ""
